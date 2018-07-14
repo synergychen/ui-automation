@@ -1,6 +1,6 @@
 module DHC
   class GameService
-    def initialize
+    def initialize(duration = 0)
       @auto_command = AutomationCommand.new
     end
 

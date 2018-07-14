@@ -1,5 +1,11 @@
 module DHC
   class AdventureService < GameService
+    def run
+      Rails.logger.info("Adventure: start")
+      super
+      Rails.logger.info("Adventure: end")
+    end
+
     private
 
     def commands

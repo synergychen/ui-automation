@@ -4,4 +4,6 @@ Rails.application.routes.draw do
       get :start
     end
   end
+
+  resource :replay
 end
