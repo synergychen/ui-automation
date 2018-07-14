@@ -5,6 +5,8 @@ module DHC
     def commands
       [
         Pause.new(2),
+        ClickImage.new("home"),
+        Pause.new(2),
         ClickImage.new("game_rating"),
         Pause.new(2),
         ClickImage.new("adventure/adventure_home"),
