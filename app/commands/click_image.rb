@@ -2,9 +2,9 @@ class ClickImage < Command
   IMAGE_PLACEHOLDER = "IMAGE_DATA"
   TEMPLATE = "#{KmScriptService::TEMPLATE_PATH}/click_image.xml"
 
-  def initialize(file)
+  def initialize(file, format = "png")
     @template = File.read(TEMPLATE)
-    @image = raw_image("#{KmScriptService::IMAGE_PATH}/#{file}")
+    @image = raw_image("#{KmScriptService::IMAGE_PATH}/#{file}.#{format}")
   end
 
   def execute
