@@ -1,5 +1,5 @@
 module DHC
-  class BossService < GameService
+  class SteelWidowService < GameService
     private
 
     def commands
@@ -13,17 +13,21 @@ module DHC
         Pause.new(2),
         ClickImage.new("boss/boss_raids"),
         Pause.new(2),
-        ClickImage.new("boss/elder_drake"),
+        DragImage.new("boss/golden_bull", -200, 0),
         Pause.new(2),
-        DragImage.new("boss/elder_drake_11", 0, 18),
+        DragImage.new("boss/golden_bull", -200, 0),
         Pause.new(2),
-        ClickImage.new("boss/elder_drake_10"),
+        ClickImage.new("boss/steel_widow"),
+        Pause.new(2),
+        DragImage.new("boss/steel_widow_11", 0, 18),
         Pause.new(3),
+        ClickImage.new("boss/steel_widow_10"),
+        Pause.new(2),
         ClickImage.new("boss/battle"),
         Pause.new(20),
-        ClickImage.new("boss/auto_off"),
+        ClickImage.new("boss/sw_auto_off"),
         Pause.new(20),
-        ClickImage.new("boss/auto_off"),
+        ClickImage.new("boss/sw_auto_off"),
         Pause.new(2),
       ]
     end

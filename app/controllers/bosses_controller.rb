@@ -1,12 +1,13 @@
 class BossesController < ApplicationController
-  def start
+  def show
     duration = (params[:duration] || 3000).to_i
+    name = params[:name] == "sw" ? "SteelWidow" : "ElderDrake"
 
     Thread.new do
-      DHC::AdventureService.new.run
+      "DHC::#{name}Service".constantize.new.run
       DHC::ReplayService.new(duration).run
     end
 
-    render json: { task: "starting bosses(#{duration})..." }
+    render json: { task: "starting #{name}(#{duration})..." }
   end
 end

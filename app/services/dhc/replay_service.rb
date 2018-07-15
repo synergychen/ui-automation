@@ -41,6 +41,10 @@ module DHC
         # spend gems
         ClickImage.new("replay/spend_gems"),
         Pause.new(0.1),
+        ClickImage.new("replay/shop_energy"),
+        Pause.new(0.1),
+        ClickImage.new("replay/confirm_purchase"),
+        Pause.new(0.1),
         # level up
         ClickImage.new("replay/level_up"),
         Pause.new(0.1),

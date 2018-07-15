@@ -1,15 +1,5 @@
 Rails.application.routes.draw do
-  resources :adventures do
-    collection do
-      get :start
-    end
-  end
-
-  resources :bosses do
-    collection do
-      get :start
-    end
-  end
-
+  resources :adventures, only: [:show]
+  resources :bosses, param: :name, only: [:show]
   resource :replay
 end
