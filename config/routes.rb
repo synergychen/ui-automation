@@ -4,5 +4,6 @@ Rails.application.routes.draw do
     resources :bosses, param: :name, only: [:show]
     get :replay
     get :stop
+    get :screenshot
   end
 end

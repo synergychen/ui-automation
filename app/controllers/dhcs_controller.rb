@@ -12,6 +12,12 @@ class DhcsController < ApplicationController
 
   def stop
     Stop.new.execute
-    render json: { "task": "Terminated all tasks" }
+    render json: { "task": "Terminated all tasks." }
+  end
+
+  def screenshot
+    file_name = "current"
+    ScreenshotService.new(file_name).run
+    send_file Rails.root.join("tmp/screenshots", "#{file_name}.png"), type: "image/png", disposition: "inline"
   end
 end
