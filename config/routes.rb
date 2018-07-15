@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  resources :adventures, only: [:show]
-  resources :bosses, param: :name, only: [:show]
-  resource :replay
+  resource :dhc, only: [] do
+    resources :adventures, only: [:show]
+    resources :bosses, param: :name, only: [:show]
+    get :replay
+    get :stop
+  end
 end
