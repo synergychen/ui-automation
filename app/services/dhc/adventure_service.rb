@@ -1,5 +1,5 @@
 module DHC
-  class AdventureService < GameService
+  class AdventureService < ::CompositeService
     def run
       Rails.logger.info("Adventure: start")
       super

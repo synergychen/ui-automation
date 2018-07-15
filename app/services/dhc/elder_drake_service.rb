@@ -1,5 +1,5 @@
 module DHC
-  class ElderDrakeService < GameService
+  class ElderDrakeService < ::CompositeService
     private
 
     def commands

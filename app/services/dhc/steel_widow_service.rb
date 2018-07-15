@@ -1,5 +1,5 @@
 module DHC
-  class SteelWidowService < GameService
+  class SteelWidowService < ::CompositeService
     private
 
     def commands

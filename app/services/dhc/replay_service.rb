@@ -1,9 +1,9 @@
 module DHC
-  class ReplayService < GameService
+  class ReplayService < ::CompositeService
     DEFAULT_DURATION = 3000
 
     def initialize(duration = DEFAULT_DURATION)
-      super
+      super()
       @duration = duration
     end
 

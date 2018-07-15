@@ -1,5 +1,5 @@
 class AdventuresController < ApplicationController
-  def start
+  def index
     duration = (params[:duration] || 3000).to_i
 
     thread = Thread.new do
