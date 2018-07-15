@@ -3,6 +3,7 @@ class AdventuresController < ApplicationController
     duration = (params[:duration] || 3000).to_i
 
     thread = Thread.new do
+      DHC::StopService.new.run
       DHC::AdventureService.new.run
       DHC::ReplayService.new(duration).run
     end

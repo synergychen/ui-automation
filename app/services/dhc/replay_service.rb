@@ -23,7 +23,6 @@ module DHC
 
     def commands
       [
-        Stop.new,
         Pause.new(1),
         # rewards
         ClickImage.new("replay/rewards"),
