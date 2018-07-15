@@ -5,5 +5,11 @@ Rails.application.routes.draw do
     end
   end
 
+  resources :bosses do
+    collection do
+      get :start
+    end
+  end
+
   resource :replay
 end

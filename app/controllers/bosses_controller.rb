@@ -1,4 +1,4 @@
-class AdventuresController < ApplicationController
+class BossesController < ApplicationController
   def start
     duration = (params[:duration] || 3000).to_i
 
@@ -7,6 +7,6 @@ class AdventuresController < ApplicationController
       DHC::ReplayService.new(duration).run
     end
 
-    render json: { task: "starting adventures(#{duration})..." }
+    render json: { task: "starting bosses(#{duration})..." }
   end
 end
