@@ -1,0 +1,14 @@
+<dict>
+  <key>KeyCode</key>
+  <integer>KEY_CODE</integer>
+  <key>MacroActionType</key>
+  <string>SimulateKeystroke</string>
+  <key>Modifiers</key>
+  <integer>0</integer>
+  <key>ReleaseAll</key>
+  <false/>
+  <key>TargetApplication</key>
+  <dict/>
+  <key>TargetingType</key>
+  <string>Front</string>
+</dict>

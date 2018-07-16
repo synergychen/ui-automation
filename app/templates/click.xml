@@ -1,0 +1,33 @@
+<dict>
+  <key>Action</key>
+  <string>MoveAndClick</string>
+  <key>Button</key>
+  <integer>0</integer>
+  <key>ClickCount</key>
+  <integer>1</integer>
+  <key>DisplayMatches</key>
+  <false/>
+  <key>DragHorizontalPosition</key>
+  <string>0</string>
+  <key>DragVerticalPosition</key>
+  <string>0</string>
+  <key>Fuzz</key>
+  <integer>15</integer>
+  <key>HorizontalPositionExpression</key>
+  <string>X_POSITION</string>
+  <key>MacroActionType</key>
+  <string>MouseMoveAndClick</string>
+  <key>Modifiers</key>
+  <integer>0</integer>
+  <key>MouseDrag</key>
+  <string>None</string>
+  <key>Relative</key>
+  <string>Absolute</string>
+  <key>RelativeCorner</key>
+  <string>TopLeft</string>
+  <key>RestoreMouseLocation</key>
+  <false/>
+  <key>VerticalPositionExpression</key>
+  <string>Y_POSITION</string>
+</dict>
+
