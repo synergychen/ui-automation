@@ -12,13 +12,17 @@ module DHC
       [
         Pause.new(2),
         ClickImage.new("restart/switch_app"),
+        Pause.new(3),
+        ClickImage.new("restart/close_app"),
+        Pause.new(2),
+        ClickImage.new("restart/close_play_store"),
         Pause.new(2),
         ClickImage.new("restart/clear_all"),
         Pause.new(3),
         ClickImage.new("restart/home"),
         Pause.new(2),
         ClickImage.new("restart/dhc"),
-        Pause.new(45),
+        Pause.new(120),
       ]
     end
   end

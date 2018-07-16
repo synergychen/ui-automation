@@ -5,6 +5,7 @@ module DHC
     def commands
       [
         Pause.new(2),
+        Notification.new("Start Steel Widow"),
         ClickImage.new("home"),
         Pause.new(2),
         ClickImage.new("game_rating"),

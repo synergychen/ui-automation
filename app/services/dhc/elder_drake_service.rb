@@ -5,6 +5,7 @@ module DHC
     def commands
       [
         Pause.new(2),
+        Notification.new("Start Elder Drake"),
         ClickImage.new("home"),
         Pause.new(2),
         ClickImage.new("game_rating"),
@@ -20,9 +21,9 @@ module DHC
         ClickImage.new("boss/elder_drake_10"),
         Pause.new(3),
         ClickImage.new("boss/battle"),
-        Pause.new(20),
+        Pause.new(10),
         ClickImage.new("boss/ed_auto_off"),
-        Pause.new(20),
+        Pause.new(15),
         ClickImage.new("boss/ed_auto_off"),
         Pause.new(2),
       ]

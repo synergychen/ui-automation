@@ -11,6 +11,7 @@ class BossesController < ApplicationController
       end
       "DHC::#{name}Service".constantize.new.run
       DHC::ReplayService.new(duration).run
+      DHC::QuitAppService.new.run
     end
     thread[:group] = "dhc"
 

@@ -10,6 +10,7 @@ module DHC
 
     def commands
       [
+        Notification.new("Start Adventure"),
         Pause.new(2),
         ClickImage.new("home"),
         Pause.new(2),

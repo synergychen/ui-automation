@@ -6,6 +6,7 @@ class AdventuresController < ApplicationController
       DHC::StopService.new.run
       DHC::AdventureService.new.run
       DHC::ReplayService.new(duration).run
+      DHC::QuitAppService.new.run
     end
     thread[:group] = "dhc"
 

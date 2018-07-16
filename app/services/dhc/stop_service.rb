@@ -9,6 +9,7 @@ module DHC
 
     def commands
       [
+        Notification.new("Stop all tasks"),
         Stop.new
       ]
     end
