@@ -1,24 +1,12 @@
-# README
+# UI Automation
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Create API to execute OSX events from anywhere.
 
-Things you may want to cover:
+I have originally designed and implemented it to auto play any android or mac
+game (to skip the most time consuming part: level up and farm). By calling
+customized API, it will trigger a series of events (mouse click, keystroke, etc.).
 
-* Ruby version
+## Dependency
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Android simulator (for gaming)
+- `Keyboard Maestro`.
