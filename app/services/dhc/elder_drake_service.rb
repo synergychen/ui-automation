@@ -21,10 +21,6 @@ module DHC
         ClickImage.new("boss/elder_drake_10"),
         Pause.new(3),
         ClickImage.new("boss/battle"),
-        Pause.new(10),
-        ClickImage.new("boss/ed_auto_off"),
-        Pause.new(15),
-        ClickImage.new("boss/ed_auto_off"),
         Pause.new(2),
       ]
     end

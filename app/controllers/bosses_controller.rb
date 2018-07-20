@@ -1,20 +1,21 @@
 class BossesController < ApplicationController
-  def show
-    duration = (params[:duration] || 3000).to_i
-    name = params[:name] == "sw" ? "SteelWidow" : "ElderDrake"
-    restart = params[:restart]
+  before_action :set_name, only: [:show]
 
+  def show
     thread = Thread.new do
-      DHC::StopService.new.run
-      if restart
+      if @restart
         DHC::RestartService.new.run
       end
-      "DHC::#{name}Service".constantize.new.run
-      DHC::ReplayService.new(duration).run
+      "DHC::#{@name}Service".constantize.new.run
+      DHC::ReplayService.new(@duration).run
       DHC::QuitAppService.new.run
     end
     thread[:group] = "dhc"
 
-    render json: { task: "starting #{name}(#{duration})..." }
+    render json: { task: "starting #{@name}(#{@duration})..." }
+  end
+
+  def set_name
+    @name = params[:name] == "sw" ? "SteelWidow" : "ElderDrake"
   end
 end

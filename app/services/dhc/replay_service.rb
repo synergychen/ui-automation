@@ -1,6 +1,6 @@
 module DHC
   class ReplayService < ::CompositeService
-    DEFAULT_DURATION = 3000
+    DEFAULT_DURATION = 7200
 
     def initialize(duration = DEFAULT_DURATION)
       super()
@@ -24,6 +24,12 @@ module DHC
     def commands
       [
         Pause.new(1),
+        # auto on
+        ClickImage.new("adventure/auto_off"),
+        ClickImage.new("adventure/auto_off"),
+        ClickImage.new("boss/ed_auto_off"),
+        ClickImage.new("boss/sw_auto_off"),
+        Pause.new(0.1),
         # rewards
         ClickImage.new("replay/rewards"),
         Pause.new(0.1),

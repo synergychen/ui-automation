@@ -1,8 +1,10 @@
 module DHC
   class ChallengerService < ::CompositeService
+    DEFAULT_TIMES = 10
+
     def run
       Rails.logger.info("Challengers: start")
-      15.times do
+      DEFAULT_TIMES.times do
         super
       end
       Rails.logger.info("Challengers: end")
@@ -53,10 +55,11 @@ module DHC
         ClickImage.new("battlefield/rewards"),
         Pause.new(5),
         ClickImage.new("battlefield/watch_ads"),
-        Pause.new(45),
+        Pause.new(40),
         Keystroke.new(53),
+        Pause.new(5),
+        ClickImage.new("battlefield/main_menu"),
         Pause.new(10),
-        Keystroke.new(53),
       ]
     end
   end

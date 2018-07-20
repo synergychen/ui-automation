@@ -25,10 +25,6 @@ module DHC
         ClickImage.new("boss/steel_widow_10"),
         Pause.new(2),
         ClickImage.new("boss/battle"),
-        Pause.new(20),
-        ClickImage.new("boss/sw_auto_off"),
-        Pause.new(20),
-        ClickImage.new("boss/sw_auto_off"),
         Pause.new(2),
       ]
     end
